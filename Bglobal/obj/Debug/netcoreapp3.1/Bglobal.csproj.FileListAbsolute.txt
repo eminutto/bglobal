@@ -11,6 +11,7 @@
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/ezequielminutto/Projects/Bglobal/Bglobal/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.InMemory.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
@@ -32,6 +33,7 @@
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/bin/Debug/netcoreapp3.1/DAL.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/bin/Debug/netcoreapp3.1/DAL.pdb
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/bin/Debug/netcoreapp3.1/ApiConsumer.pdb
+/Users/ezequielminutto/Projects/Bglobal/Bglobal/obj/Debug/netcoreapp3.1/Bglobal.csproj.AssemblyReference.cache
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/obj/Debug/netcoreapp3.1/Bglobal.AssemblyInfoInputs.cache
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/obj/Debug/netcoreapp3.1/Bglobal.AssemblyInfo.cs
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/obj/Debug/netcoreapp3.1/Bglobal.csproj.CoreCompileInputs.cache
@@ -59,5 +61,3 @@
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/obj/Debug/netcoreapp3.1/Bglobal.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/obj/Debug/netcoreapp3.1/Bglobal.pdb
 /Users/ezequielminutto/Projects/Bglobal/Bglobal/obj/Debug/netcoreapp3.1/Bglobal.genruntimeconfig.cache
-/Users/ezequielminutto/Projects/Bglobal/Bglobal/obj/Debug/netcoreapp3.1/Bglobal.csproj.AssemblyReference.cache
-/Users/ezequielminutto/Projects/Bglobal/Bglobal/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.InMemory.dll

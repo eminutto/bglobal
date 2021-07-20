@@ -6,9 +6,11 @@
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Bglobal.UnitTests.runtimeconfig.dev.json
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Bglobal.UnitTests.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Bglobal.UnitTests.pdb
+/Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Castle.Core.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.InMemory.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
@@ -25,6 +27,7 @@
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.Utilities.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.Common.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/testhost.dll
+/Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Moq.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
@@ -107,6 +110,3 @@
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/obj/Debug/netcoreapp3.1/Bglobal.UnitTests.dll
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/obj/Debug/netcoreapp3.1/Bglobal.UnitTests.pdb
 /Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/obj/Debug/netcoreapp3.1/Bglobal.UnitTests.genruntimeconfig.cache
-/Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Castle.Core.dll
-/Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Moq.dll
-/Users/ezequielminutto/Projects/Bglobal/Bglobal.UnitTests/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.InMemory.dll

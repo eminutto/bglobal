@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using DAL.Data;
 using DAL.Data.Repos;
@@ -10,32 +11,56 @@ using Moq;
 namespace Bglobal.UnitTests
 {
     [TestClass]
-    public class VehiculoUnitTests
+    public class VehiculoUnitTests : BasePruebas
     {
         [TestMethod]
-        public async Task Should_AddTitularToDB_ReturnsTrue()
+        public async Task Should_AddPruebaToDB_ReturnsTrue()
         {
-            var options = new DbContextOptionsBuilder<VehiculoDbContext>()
-            .UseInMemoryDatabase(databaseName: "VehiculosBDD")
-            .Options;
+            var dbName = Guid.NewGuid().ToString();
+            var context = ConfigureContext(dbName);
 
-            var vehiculo = new Vehiculo() { CantPuertas = 4, Patente = "QQAAQ" };
-
-            // Use a clean instance of the context to run the test
-            using (var context = new VehiculoDbContext(options))
+            var vehiculo = new Vehiculo
             {
-                var mockRepo = new Mock<VehiculoRepo>(context);
+                CantPuertas = 3,
+                Modelo = "T",
+                Patente = "TREWQT"
+            };
 
-                //var mockRepo = new VehiculoRepo(context);
+            var marca = new Marca
+            {
+                NombreMarca = "Kia"
+            };
 
-                var mockDb = new VehiculoDbContext(options);
+            await ConfigureMarcaInterface(context).AddMarcaAsync(marca);
 
-                var test = mockRepo.Setup(x => x.AddVehiculoAsync(vehiculo, new Marca { NombreMarca = "Smart" }));
+            await context.SaveChangesAsync();
 
-                var result = await context.SaveChangesAsync();
+            var titular = new Titular
+            {
+                Apellido = "Martinez",
+                Nombre = "Ariel"
+            };
 
-                Assert.AreEqual(result, 1);
-            }
+            var email = new Email
+            {
+                DireccionEmail = ""
+            };
+
+            await ConfigureVehiculoInterface(context).AddVehiculoCumpletoAsync(vehiculo, marca,
+                titular, email);
+
+            await context.SaveChangesAsync();
+
+            var result = await ConfigureVehiculoInterface(context).CheckifVehiculoExistAsync(vehiculo);
+
+
+            var result2 = await ConfigureVehiculoInterface(context).GetVehiculosAsync();
+
+            Assert.AreEqual(true, result);
+            Assert.AreEqual(1, result2.Count);
+            Assert.AreEqual(true, result2.FirstOrDefault().TitularesVehiculos.Any(t => t.Titular.Apellido.Equals("Martinez")));
+
+
         }
     }
 }

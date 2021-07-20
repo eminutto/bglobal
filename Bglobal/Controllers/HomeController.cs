@@ -9,11 +9,7 @@ using Bglobal.Models;
 using DAL.Data;
 using DAL.Data.Interfaces;
 using DAL.Entidades;
-using System.Net.Http;
-using Newtonsoft.Json;
-using RestSharp;
 using ApiConsumer;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Bglobal.Controllers
 {
@@ -166,7 +162,6 @@ namespace Bglobal.Controllers
             }
 
             await _ctx.SaveChangesAsync();
-
 
 
             return "Ok";
