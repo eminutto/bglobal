@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Entidades\" />
+    <None Remove="Data\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Data\Repos\" />
+    <None Remove="Data\Interfaces\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Microsoft.EntityFrameworkCore.InMemory" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entidades\" />
+    <Folder Include="Data\" />
+    <Folder Include="Data\Repos\" />
+    <Folder Include="Data\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.8" />
+  </ItemGroup>
+</Project>

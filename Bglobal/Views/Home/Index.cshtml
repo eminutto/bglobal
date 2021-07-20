@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model VehiculoListViewModel;
+
+<div class="text-center">
+    <table class="arrowes-table table-striped">
+        <thead>
+            <tr>
+                <th>Titular</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Patente</th>
+                <th>Cantidad de Puertas</th>
+                <th>Email</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model.Vehiculos)
+            {
+            <tr>
+                @*<td>@Html.ActionLink(@group.Key, "Operator", "Operators", new { area = "VehicleManagement", operatorId = group.FirstOrDefault().DriverId })</td>*@
+                <td>
+                    <ul class="list-unstyled">
+                        @foreach (var titular in item.TitularesVehiculos)
+                        {
+                            @titular.Titular.Apellido
+
+                            <span class="dataText none">
+                                ,
+                            </span>
+
+                            @titular.Titular.Nombre
+                        }
+                    </ul>
+                </td>
+                <td>
+                    <ul class="list-unstyled">
+                        @item.Marca.NombreMarca
+                    </ul>
+                </td>
+                <td>
+                    <ul class="list-unstyled">
+                        @item.Modelo
+                    </ul>
+                </td>
+                <td>
+                    <ul class="list-unstyled">
+                        @item.Patente
+                    </ul>
+                </td>
+                <td>
+                    <ul class="list-unstyled">
+                        @item.CantPuertas
+                    </ul>
+                </td>
+                <td>
+                    <ul class="list-unstyled">
+                        @foreach (var titular in item.TitularesVehiculos)
+                        {
+                            foreach (var email in titular.Titular.Emails)
+                            {
+                                @email.DireccionEmail<br />
+                            }
+                        }
+                    </ul>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

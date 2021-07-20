@@ -1,0 +1,12 @@
+/Users/ezequielminutto/Projects/Bglobal/ApiConsumer/bin/Debug/netcoreapp3.1/ApiConsumer.deps.json
+/Users/ezequielminutto/Projects/Bglobal/ApiConsumer/bin/Debug/netcoreapp3.1/ApiConsumer.dll
+/Users/ezequielminutto/Projects/Bglobal/ApiConsumer/bin/Debug/netcoreapp3.1/ApiConsumer.pdb
+/Users/ezequielminutto/Projects/Bglobal/ApiConsumer/bin/Debug/netcoreapp3.1/DAL.dll
+/Users/ezequielminutto/Projects/Bglobal/ApiConsumer/bin/Debug/netcoreapp3.1/DAL.pdb
+/Users/ezequielminutto/Projects/Bglobal/ApiConsumer/obj/Debug/netcoreapp3.1/ApiConsumer.csproj.AssemblyReference.cache
+/Users/ezequielminutto/Projects/Bglobal/ApiConsumer/obj/Debug/netcoreapp3.1/ApiConsumer.AssemblyInfoInputs.cache
+/Users/ezequielminutto/Projects/Bglobal/ApiConsumer/obj/Debug/netcoreapp3.1/ApiConsumer.AssemblyInfo.cs
+/Users/ezequielminutto/Projects/Bglobal/ApiConsumer/obj/Debug/netcoreapp3.1/ApiConsumer.csproj.CoreCompileInputs.cache
+/Users/ezequielminutto/Projects/Bglobal/ApiConsumer/obj/Debug/netcoreapp3.1/ApiConsumer.csproj.CopyComplete
+/Users/ezequielminutto/Projects/Bglobal/ApiConsumer/obj/Debug/netcoreapp3.1/ApiConsumer.dll
+/Users/ezequielminutto/Projects/Bglobal/ApiConsumer/obj/Debug/netcoreapp3.1/ApiConsumer.pdb

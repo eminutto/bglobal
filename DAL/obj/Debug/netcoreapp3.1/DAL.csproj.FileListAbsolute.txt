@@ -1,0 +1,8 @@
+/Users/ezequielminutto/Projects/Bglobal/DAL/bin/Debug/netcoreapp3.1/DAL.deps.json
+/Users/ezequielminutto/Projects/Bglobal/DAL/bin/Debug/netcoreapp3.1/DAL.dll
+/Users/ezequielminutto/Projects/Bglobal/DAL/bin/Debug/netcoreapp3.1/DAL.pdb
+/Users/ezequielminutto/Projects/Bglobal/DAL/obj/Debug/netcoreapp3.1/DAL.AssemblyInfoInputs.cache
+/Users/ezequielminutto/Projects/Bglobal/DAL/obj/Debug/netcoreapp3.1/DAL.AssemblyInfo.cs
+/Users/ezequielminutto/Projects/Bglobal/DAL/obj/Debug/netcoreapp3.1/DAL.csproj.CoreCompileInputs.cache
+/Users/ezequielminutto/Projects/Bglobal/DAL/obj/Debug/netcoreapp3.1/DAL.dll
+/Users/ezequielminutto/Projects/Bglobal/DAL/obj/Debug/netcoreapp3.1/DAL.pdb

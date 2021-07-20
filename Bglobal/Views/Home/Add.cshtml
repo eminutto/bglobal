@@ -1,0 +1,59 @@
+﻿@using Bglobal.Models
+@model CargaVehiculoViewModel
+@*<form method="post" asp-controller="Home" asp-action="Add">
+        <table>
+            <tr>
+                <td>First Name: </td>
+                @Html.DropDownListFor(model => model.Titulares, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Titulares, "", new { @class = "text-danger" })
+                <td><input type="text" id="first_name" name="FirstName" /></td>
+            </tr>
+            <tr>
+                <td>Last Name: </td>
+                <td><input type="text" id="last_name" name="LastName" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit" asp-page-handler="Submit" /></td>
+            </tr>
+        </table>
+        <hr />
+    </form>*@
+
+@using (Html.BeginForm("Add", "Home", FormMethod.Post))
+{
+    @Html.ValidationSummary(true)
+    <div class="form-group">
+        <h3>Nombre Completo del Titular:</h3>
+        @Html.ValidationMessageFor(m => m.NombreCompleto)
+        @Html.DropDownListFor(m => m.NombreCompleto, new SelectList(Model.Titulares, "NombreCompleto", "NombreCompleto"), "Seleccionar un valor", new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <h3>Marca:</h3>
+        @Html.ValidationMessageFor(m => m.Marca.NombreMarca)
+        @Html.DropDownListFor(m => m.Marca.NombreMarca, new SelectList(Model.Marcas, "NombreMarca", "NombreMarca"), "Seleccionar una marca", new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <h3>Modelo:</h3>
+        @Html.ValidationMessageFor(m => m.Vehiculo.Modelo)
+        @Html.TextBoxFor(m => m.Vehiculo.Modelo, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <h3>Email:</h3>
+        @Html.ValidationMessageFor(m => m.Email.DireccionEmail)
+        @Html.TextBoxFor(m => m.Email.DireccionEmail, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <h3>Patente:</h3>
+        @Html.ValidationMessageFor(m => m.Vehiculo.Patente)
+        @Html.TextBoxFor(m => m.Vehiculo.Patente, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <h3>Cantidad de Puertas:</h3>
+        @Html.ValidationMessageFor(m => m.Vehiculo.CantPuertas)
+        @Html.TextBoxFor(m => m.Vehiculo.CantPuertas, new { @class = "form-control" })
+    </div>
+
+    <input type="submit" value="Submit" />
+}
