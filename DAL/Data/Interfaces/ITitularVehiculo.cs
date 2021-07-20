@@ -7,7 +7,7 @@ namespace DAL.Data.Interfaces
     public interface ITitular
     {
         public Task<Titular> GetTitularVehiculoAsync(string nombre, string apellido);
-        public Task<string> AddTitularVehiculoAsync(Titular titular);
+        public Task<bool> AddTitularVehiculoAsync(Titular titular);
         public Task<bool> CheckTitularExistAsync(Titular titular);
     }
 }

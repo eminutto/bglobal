@@ -10,28 +10,23 @@ namespace DAL.Data.Repos
     public class TitularVehiculoRepo : ITitular
     {
         private readonly VehiculoDbContext _ctx;
-        private readonly ILogger _logger;
 
         public TitularVehiculoRepo(VehiculoDbContext ctx)
         {
             _ctx = ctx;
-            //_logger = logger;
         }
 
-        public async Task<string> AddTitularVehiculoAsync(Titular titular)
+        public async Task<bool> AddTitularVehiculoAsync(Titular titular)
         {
             if (await CheckTitularExistAsync(titular) == false)
             {
                 await _ctx.Titulares.AddAsync(titular);
 
-                return "Added";
-
-                //_logger.LogInformation("Added");
+                return true;
             }
 
-            return "Not Added";
+            return false;
 
-            //_logger.LogInformation("Not Added");
         }
 
         public async Task<bool> CheckTitularExistAsync(Titular titular)
