@@ -1,41 +1,32 @@
 ﻿<Properties StartupConfiguration="{F81A2605-7A97-4CCF-9BC7-26B90079A201}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DAL/Data/Interfaces/ITitularVehiculo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ApiConsumer/Entidades/ApiResponseModel.cs">
     <Files>
-      <File FileName="Bglobal/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Bglobal/Views/Home/Index.cshtml" Line="24" Column="17" />
       <File FileName="Bglobal/Program.cs" Line="16" Column="1" NotebookId="1" />
       <File FileName="Bglobal/Controllers/HomeController.cs" Line="165" Column="1" NotebookId="1" />
-      <File FileName="DAL/Data/Repos/VehiculoRepo.cs" Line="63" Column="45" NotebookId="1" />
-      <File FileName="DAL/Data/Repos/MarcaRepo.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DAL/Data/Repos/EmailRepo.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="DAL/Data/Repos/TitularVehiculoRepo.cs" Line="10" Column="45" NotebookId="1" />
-      <File FileName="DAL/Data/Interfaces/ITitularVehiculo.cs" Line="10" Column="25" NotebookId="1" />
+      <File FileName="DAL/Data/Repos/VehiculoRepo.cs" NotebookId="1" />
+      <File FileName="DAL/Data/Repos/MarcaRepo.cs" NotebookId="1" />
+      <File FileName="DAL/Data/Repos/EmailRepo.cs" NotebookId="1" />
+      <File FileName="DAL/Data/Repos/TitularVehiculoRepo.cs" NotebookId="1" />
+      <File FileName="DAL/Data/Interfaces/ITitularVehiculo.cs" NotebookId="1" />
+      <File FileName="Bglobal/appsettings.json" Line="12" Column="80" NotebookId="1" />
+      <File FileName="ApiConsumer/Entidades/TitularModel.cs" Line="15" Column="1" NotebookId="1" />
+      <File FileName="ApiConsumer/Entidades/ApiResponseModel.cs" Line="10" Column="9" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Bglobal" expanded="True">
+            <Node name="ApiConsumer" expanded="True">
+              <Node name="Entidades" expanded="True">
+                <Node name="ApiResponseModel.cs" selected="True" />
+              </Node>
+            </Node>
             <Node name="Bglobal" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-              </Node>
             </Node>
             <Node name="Bglobal.UnitTests" expanded="True" />
-            <Node name="DAL" expanded="True">
-              <Node name="Data" expanded="True">
-                <Node name="Interfaces" expanded="True">
-                  <Node name="ITitularVehiculo.cs" selected="True" />
-                </Node>
-                <Node name="Repos" expanded="True" />
-              </Node>
-            </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Bglobal" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

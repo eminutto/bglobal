@@ -13,10 +13,6 @@ namespace ApiConsumer.Entidades
                 return Nombre + " " + Apellido;
             }
 
-            set
-            {
-
-            }
         }
 
         [JsonProperty(PropertyName = "email")]

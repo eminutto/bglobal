@@ -7,9 +7,7 @@ namespace ApiConsumer.Entidades
 {
     public class ApiResponseModel
     {
-        public ApiResponseModel()
-        {
-        }
+        
 
         [JsonProperty(PropertyName = "page")]
         public int Page { get; set; }
