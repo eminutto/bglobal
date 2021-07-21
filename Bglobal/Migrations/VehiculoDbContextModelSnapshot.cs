@@ -101,9 +101,12 @@ namespace Bglobal.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Modelo")
+                        .IsRequired()
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Patente")
+                        .IsRequired()
+                        .HasMaxLength(8)
                         .HasColumnType("nvarchar(8)");
 
                     b.HasKey("Id");

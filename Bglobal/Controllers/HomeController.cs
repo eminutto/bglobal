@@ -36,6 +36,13 @@ namespace Bglobal.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
+            var marcas = await _marca.GetMarcasAsync();
+
+            if (marcas.Count < 1)
+            {
+                return RedirectToAction("Constantes");
+            }
+
             var model = new VehiculoListViewModel()
             {
                 Vehiculos = await _vehiculo.GetVehiculosAsync()
@@ -92,7 +99,7 @@ namespace Bglobal.Controllers
 
         #region Constantes
         [HttpGet]
-        public async Task<string> Constantes()
+        public async Task<IActionResult> Constantes()
         {
             var marcasList = new List<Marca>()
             {
@@ -158,13 +165,14 @@ namespace Bglobal.Controllers
 
             foreach (var titular in titularesList)
             {
-                await _titular.AddTitularVehiculoAsync(titular);
+                if (await _titular.AddTitularVehiculoAsync(titular))
+                {
+                    await _ctx.SaveChangesAsync();
+                }
+                
             }
 
-            await _ctx.SaveChangesAsync();
-
-
-            return "Ok";
+            return RedirectToAction("Index");
         }
 
         #endregion

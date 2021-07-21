@@ -7,7 +7,6 @@
   <ItemGroup>
     <None Remove="Pomelo.EntityFrameworkCore.MySql" />
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
-    <None Remove="Migrations\" />
     <None Remove="Newtonsoft.Json" />
     <None Remove="RestSharp" />
     <None Remove="App_Start\" />
@@ -30,7 +29,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Migrations\" />
     <Folder Include="App_Start\" />
   </ItemGroup>
 </Project>

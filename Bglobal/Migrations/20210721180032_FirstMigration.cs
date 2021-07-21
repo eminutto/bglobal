@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Bglobal.Migrations
 {
-    public partial class CreateBDDMigration : Migration
+    public partial class FirstMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -46,8 +46,8 @@ namespace Bglobal.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     MarcaId = table.Column<int>(type: "int", nullable: false),
-                    Modelo = table.Column<string>(type: "nvarchar(100)", nullable: true),
-                    Patente = table.Column<string>(type: "nvarchar(8)", nullable: true),
+                    Modelo = table.Column<string>(type: "nvarchar(100)", nullable: false),
+                    Patente = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false),
                     CantPuertas = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -68,9 +68,8 @@ namespace Bglobal.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    TitularVehiculoId = table.Column<int>(type: "int", nullable: false),
-                    DireccionEmail = table.Column<string>(type: "nvarchar(100)", nullable: true),
-                    TitularId = table.Column<int>(type: "int", nullable: true)
+                    TitularId = table.Column<int>(type: "int", nullable: false),
+                    DireccionEmail = table.Column<string>(type: "nvarchar(100)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -80,7 +79,7 @@ namespace Bglobal.Migrations
                         column: x => x.TitularId,
                         principalTable: "Titulares",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 

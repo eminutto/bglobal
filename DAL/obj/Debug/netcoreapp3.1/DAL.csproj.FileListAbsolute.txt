@@ -6,3 +6,4 @@
 /Users/ezequielminutto/Projects/Bglobal/DAL/obj/Debug/netcoreapp3.1/DAL.csproj.CoreCompileInputs.cache
 /Users/ezequielminutto/Projects/Bglobal/DAL/obj/Debug/netcoreapp3.1/DAL.dll
 /Users/ezequielminutto/Projects/Bglobal/DAL/obj/Debug/netcoreapp3.1/DAL.pdb
+/Users/ezequielminutto/Projects/Bglobal/DAL/obj/Debug/netcoreapp3.1/DAL.csproj.AssemblyReference.cache

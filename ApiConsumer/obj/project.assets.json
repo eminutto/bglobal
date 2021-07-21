@@ -649,7 +649,7 @@
       "outputPath": "/Users/ezequielminutto/Projects/Bglobal/ApiConsumer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ezequielminutto/.config/NuGet/NuGet.Config"
+        "/Users/ezequielminutto/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
